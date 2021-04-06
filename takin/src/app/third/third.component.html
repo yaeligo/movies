@@ -1,0 +1,21 @@
+<p>third works!</p>
+
+<form myForm1="ngForm">
+<!-- 
+<div><input type=text [(ngModel)]="selectedMovie.title" name="aaa"></div>
+<div><input type=text [(ngModel)]="selectedMovie.image" name="bbb"></div>
+<div><input type=text [(ngModel)]="selectedMovie.rating" name="ccc"></div>
+<div><input type=text [(ngModel)]="selectedMovie.releaseYear" name="ddd"></div>
+<div><input type=text [(ngModel)]="selectedMovie.genre" name="eee"></div> -->
+
+
+<input [(ngModel)]="selectedMovie.title" name="aaa" type="text"><br/>
+<!-- <input [(ngModel)]="selectedMovie.image" name="bbb" type="text"> -->
+<input [(ngModel)]="selectedMovie.rating" name="ccc" type="text"><br/>
+<input [(ngModel)]="selectedMovie.releaseYear" name="ddd" type="text"><br/>
+<input [(ngModel)]="selectedMovie.genre" name="eee" type="text"><br/>
+<img class="image" [src]='selectedMovie.image'><br/><br/>
+<button routerLink="/two">return to mmmovies list</button>
+<!-- [src]='selectedMovie.image' -->
+</form>
+

@@ -1,0 +1,17 @@
+<p>second works!</p>
+
+<!-- click button, it check if the QR code inner the json array  -->
+<button class="btn" (click)="check()">*** CLICK TO ADD NEW MOVIE ***</button>
+
+
+<ul class="movies">
+    <li *ngFor="let movie of movies | releaseYearpipe:{ property: 'releaseYear', descending: false }"
+      [class.selected]="movie === selectedMovie"
+      (click)="onSelect(movie)" [myMovie]="selectedMovie">
+      <span class="badge" >{{movie.releaseYear}}</span>{{movie.title}} 
+    </li>
+</ul>
+
+<!-- <li><a routerLink="three">third</a></li> 
+(click)="onSelect(movie)"
+ routerLink="three" -->
